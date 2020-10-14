@@ -1,0 +1,348 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: "Oswald", sans-serif;
+	background: #F0F8FF;
+    font-size: 16px; 
+
+}
+
+.menu_var{
+ cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 2;
+ display: none; 
+}
+
+.logo{
+	width: 5%;
+}
+
+ul{
+	list-style: none;
+}
+
+.container a{
+	background: #ADD8E6;
+    color: #fff;
+
+}
+
+
+.container{
+	background: #F0F8FF;
+	margin: auto;
+	width: 90%;
+}
+
+
+.nav-main{
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 20px 0;
+
+}
+
+/*Nav-bar*/
+
+.nav-main ul{
+	display: flex;
+	margin-top: 25px;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a{
+	padding: 2px;
+}
+
+.nav-main ul a:hover{
+border-bottom: 2px solid #000;
+
+}
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+.img{
+	width: 60%;
+}
+
+.inicio{
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    padding-right: 30px;
+}
+
+.inicio img{
+	width: 40%;
+}
+
+h1{
+	font-size: 30px;
+}
+
+/*El contenido de abajo*/
+.min-pre {
+  display:flex; 
+  padding-left: 40px;
+  width: 90%;
+  margin-top: 100px; 
+}
+
+/*Para conrregir el tamaño de la imagen*/
+.min-pre img{
+	width: 80%;
+	height: 180px;
+ 
+}
+
+.Sobre-mi{
+	width: 80%;
+    height: 120px;
+    margin-bottom: 80px;
+    background: url(./img/m.png);
+    padding-left: 50px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.Sobre-mi .mi{
+	width: 50%;
+    padding: 80px 0 0 30px;
+    color: #000;
+
+}
+
+
+.Sobre-mi h3{
+	font-size: 28px;
+    text-align: center;
+    color: #87CEFA;
+}
+
+.Sobre-mi a{
+	font-size: 23px;
+	background: #2F4F4F;
+	color: #fff;
+	border-radius: 30px;
+	padding-right: 15px;
+}
+
+.Sobre-mi a:hover{
+	background: #FFFAF0;
+	color: #4169E1;
+}
+
+.cierre{
+	background: #F8F8FF;
+	display: flex;
+	text-align: center;
+	color: #000;
+	margin-top: 250px;
+}
+
+.cierre a{
+    color: #000;
+}
+
+.cierre2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cierre2 ul{
+    margin-left: 120px;
+
+}
+
+.cierre{
+	 line-height: 2.8;
+}
+
+
+footer{
+  background: #F8F8FF;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
+ 
+}
+
+.min-pre2{
+ display:flex; 
+  padding-left: 40px;
+  width: 90%;
+  margin-top: 350px;
+}
+
+/*Para conrregir el tamaño de la imagen*/
+.min-pre2 img{
+	width: 80%;
+	height: 180px;
+}
+
+.Sobre-mi2{
+	width: 70%;
+    height: 80px;
+    background: url(./img/m.png);
+    padding-left: 50px;
+    margin-left: 30px;
+    margin-top: 130px;
+
+}
+
+.Sobre-mi2 .mi{
+	width: 50%;
+  padding: 100px 0 0 30px;
+  color: #000;
+
+}
+
+
+.Sobre-mi2 h3{
+	font-size: 28px;
+    text-align: center;
+    color: #87CEFA;
+}
+
+.Sobre-mi2 a{
+	font-size: 23px;
+	background: #2F4F4F;
+	color: #fff;
+	border-radius: 30px;
+	padding-right: 15px;
+}
+
+.Sobre-mi2 a:hover{
+	background: #FFFAF0;
+	color: #4169E1;
+}
+
+
+/*Para Movil*/
+@media (max-width: 700px) {
+.min-pre{
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+	padding-right: 20px; 
+}
+
+.min-pre2{
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+	padding-right: 20px; 
+    margin: auto;
+}
+
+.Sobre-mi{
+	margin-top: 20px;
+}
+
+.Sobre-mi .mi{
+   display: inline;
+   height: 30px;
+   
+}
+
+.Sobre-mi2{
+	margin-top: 20px;
+}
+
+.Sobre-mi2 .mi{
+   display: inline;
+   height: 30px;
+   
+}
+
+.cierre .cierre2{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+}
+
+.nav-main ul.bar{
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	background:#ccc;
+	height: 100%;
+	padding: 20px;
+	opacity: .5;
+	transform: translateX(-500px);
+	transition: transform 1s; 
+	
+}
+
+.nav-main ul.bar.show{
+	transform: translate(-10px,-40px);
+	
+}
+
+.container a{
+	background: #6495ED;
+	color: #FFFAF0;
+}
+
+.logo{
+	transform: translateX(280px);
+	width: 8%;
+}
+
+.menu_var{
+	display: flex;
+}
+
+
+@media (max-width: 500px){
+.min-pre2{
+	display: grid;
+   grid-template-columns: 1fr;
+}
+
+.min-pre{
+	display: none;
+}
+
+
+.cierre .cierre2{
+	margin-top: 100px;
+}
+
+.Sobre-mi{
+  display: none;
+}
+
+}
+
+.logo{
+	transform: translate(180px,10px);
+}
+
+.menu_var{
+   transform: translateX(10px);
+   
+}
